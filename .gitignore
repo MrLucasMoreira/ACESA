@@ -1,0 +1,7 @@
+# Local extraction and preview files
+tmp/
+tmp_extract_pdf.py
+
+# Operating system files
+.DS_Store
+Thumbs.db
