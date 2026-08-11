@@ -17,6 +17,6 @@ menu.querySelectorAll("a").forEach((link) => {
 document.querySelector(".interest-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const note = document.querySelector(".form-note");
-  note.textContent = "Obrigado. Seu interesse foi registrado nesta demonstração.";
+  note.textContent = "Obrigado. Sua intenção de associação foi registrada nesta demonstração.";
   event.currentTarget.reset();
 });
