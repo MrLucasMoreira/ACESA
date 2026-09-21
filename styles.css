@@ -26,7 +26,7 @@ button, input { max-width: 100%; font: inherit; }
 .site-header { position: relative; z-index: 20; height: 80px; border-bottom: 1px solid rgba(13,29,52,.12); background: rgba(247,244,237,.98); }
 .nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { min-width: 0; display: flex; align-items: center; gap: 9px; color: var(--navy); }
-.brand-mark { width: 50px; height: 58px; flex: 0 0 auto; object-fit: contain; }
+.brand-mark { width: 58px; height: 58px; flex: 0 0 auto; border-radius: 10px; object-fit: cover; }
 .brand strong { display: block; font: 700 23px/1 var(--serif); letter-spacing: .12em; }
 .brand small { display: block; margin-top: 4px; font: 500 7px/1.25 var(--sans); letter-spacing: .05em; text-transform: uppercase; }
 .menu-toggle { display: block; flex: 0 0 auto; padding: 10px 0 10px 10px; border: 0; background: transparent; }
@@ -54,6 +54,8 @@ h2 { color: var(--navy); font: 600 clamp(40px, 12vw, 50px)/1.03 var(--serif); le
 .hero-lead { color: #d7d8d7; font-size: 18px; line-height: 1.55; }
 .hero-quote { margin: 28px 0 0; padding-left: 18px; border-left: 1px solid var(--gold); color: #efe8d9; font: 500 24px/1.3 var(--serif); }
 .hero-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 25px; margin-top: 36px; }
+.hero-support-link { position: relative; z-index: 3; width: fit-content; display: flex; align-items: center; gap: 14px; margin: 34px 16px 0 auto; padding-bottom: 6px; border-bottom: 1px solid var(--gold); color: #e6e5df; font-size: 15px; font-weight: 600; }
+.hero-support-link span { color: var(--gold); font-size: 19px; line-height: 1; }
 .button { min-height: 52px; width: 100%; display: inline-flex; justify-content: center; align-items: center; padding: 12px 20px; border: 1px solid transparent; cursor: pointer; font-size: 14px; font-weight: 600; letter-spacing: .03em; transition: background .2s, color .2s, transform .2s; }
 .button:active { transform: translateY(1px); }
 .button-gold { background: var(--gold); color: var(--navy-deep); }
@@ -168,7 +170,7 @@ h2 { color: var(--navy); font: 600 clamp(40px, 12vw, 50px)/1.03 var(--serif); le
 .site-footer { padding: 65px 0 22px; background: #07162a; color: #9da4ab; font-size: 14px; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 42px 24px; padding-bottom: 50px; }
 .footer-brand { grid-column: 1 / -1; align-items: flex-start; color: white; }
-.footer-brand .brand-mark { width: 68px; height: 78px; }
+.footer-brand .brand-mark { width: 72px; height: 72px; }
 .footer-top > div { display: flex; flex-direction: column; gap: 8px; }
 .footer-top > div > p { margin-bottom: 10px; color: var(--gold); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
 .footer-top span { display: block; }
@@ -225,7 +227,7 @@ h2 { color: var(--navy); font: 600 clamp(40px, 12vw, 50px)/1.03 var(--serif); le
 @media (min-width: 960px) {
   .site-header { height: 94px; }
   .brand { gap: 13px; }
-  .brand-mark { width: 65px; height: 74px; }
+  .brand-mark { width: 72px; height: 72px; }
   .brand strong { font-size: 28px; }
   .brand small { font-size: 9px; letter-spacing: .07em; }
   .menu-toggle { display: none; }
@@ -238,6 +240,7 @@ h2 { color: var(--navy); font: 600 clamp(40px, 12vw, 50px)/1.03 var(--serif); le
   h1 { font-size: clamp(76px, 6vw, 91px); }
   .hero-lead { max-width: 650px; font-size: 21px; }
   .hero-ornament { width: 390px; right: 5vw; }
+  .hero-support-link { position: absolute; top: 42px; right: 5vw; margin: 0; }
   .hero-side-note { display: block; position: absolute; right: 40px; bottom: 70px; margin: 0; color: var(--gold); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; writing-mode: vertical-rl; }
   .section { padding: 120px 0; }
   .intro-grid { display: grid; grid-template-columns: 120px 1.4fr .85fr; gap: 55px; align-items: start; }
